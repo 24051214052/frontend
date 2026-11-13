@@ -97,8 +97,8 @@ function App() {
         {/* Subheader */}
         <section className="page-heading">
           <div>
-            <h2>Daftar Data Mahasiswa</h2>
-            <p>Informasi lengkap mahasiswa yang terdaftar.</p>
+            <h2>Daftar Data Mahasiswa Universitas Negeri Surabaya</h2>
+            <p>Informasi lengkap mahasiswa unesa yang terdaftar.</p>
           </div>
         </section>
 
