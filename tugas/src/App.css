@@ -7,17 +7,17 @@
 
 body {
   font-family: "Segoe UI", Arial, sans-serif;
-  background: #f4f6fb;
-  color: #1e293b;
+  background: #f5f2fc;
+  color: #30264b;
 }
 
 .app-container {
   min-height: 100vh;
 }
 
-/* Header */
+/* HEADER */
 .header {
-  background: #1e3a8a;
+  background: linear-gradient(120deg, #38245f, #6745a5);
   color: white;
   padding: 22px 6%;
   display: flex;
@@ -34,9 +34,9 @@ body {
 .logo {
   width: 48px;
   height: 48px;
-  background: white;
-  color: #1e3a8a;
-  border-radius: 12px;
+  background: #e9ddff;
+  color: #59358f;
+  border-radius: 14px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -51,18 +51,19 @@ body {
 
 .header p {
   font-size: 13px;
-  color: #bfdbfe;
+  color: #e1d4fa;
 }
 
 .header-badge {
-  background: #ffffff20;
+  background: #ffffff25;
+  border: 1px solid #ffffff35;
   padding: 9px 15px;
-  border-radius: 8px;
+  border-radius: 20px;
   font-size: 11px;
   letter-spacing: 1px;
 }
 
-/* Main Content */
+/* MAIN CONTENT */
 .main-content {
   padding: 35px 6%;
 }
@@ -74,14 +75,15 @@ body {
 .page-heading h2 {
   font-size: 25px;
   margin-bottom: 7px;
+  color: #39265d;
 }
 
 .page-heading p {
-  color: #64748b;
+  color: #89809d;
   font-size: 14px;
 }
 
-/* Information Cards */
+/* INFORMATION CARDS */
 .info-section {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -93,33 +95,40 @@ body {
 .clock-card {
   background: white;
   padding: 24px;
-  border-radius: 12px;
+  border-radius: 16px;
   display: flex;
   align-items: center;
   gap: 20px;
-  box-shadow: 0 3px 12px #00000008;
-  border: 1px solid #e2e8f0;
+  box-shadow: 0 5px 18px #52347d12;
+  border: 1px solid #e9e0f6;
+  transition: 0.25s ease;
+}
+
+.info-card:hover,
+.clock-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 9px 22px #52347d20;
 }
 
 .card-icon,
 .clock-icon {
   width: 55px;
   height: 55px;
-  border-radius: 12px;
-  background: #dbeafe;
+  border-radius: 15px;
+  background: #eee6ff;
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
   font-size: 25px;
 }
 
 .clock-icon {
-  background: #dcfce7;
+  background: #e5defb;
 }
 
 .info-card p,
 .clock-card p {
-  color: #64748b;
+  color: #89809d;
   font-size: 13px;
   margin-bottom: 5px;
 }
@@ -128,26 +137,27 @@ body {
 .clock-card h3 {
   font-size: 27px;
   margin-bottom: 5px;
+  color: #62419a;
 }
 
 .clock-card h3 {
-  color: #15803d;
+  color: #7548b8;
   font-family: monospace;
 }
 
 .info-card span,
 .clock-card span {
   font-size: 12px;
-  color: #94a3b8;
+  color: #a49bb5;
 }
 
-/* Table Section */
+/* TABLE SECTION */
 .table-section {
   background: white;
-  border-radius: 12px;
-  border: 1px solid #e2e8f0;
+  border-radius: 16px;
+  border: 1px solid #e9e0f6;
   overflow: hidden;
-  box-shadow: 0 3px 12px #00000008;
+  box-shadow: 0 5px 18px #52347d12;
 }
 
 .table-header {
@@ -160,23 +170,24 @@ body {
 .table-header h3 {
   font-size: 18px;
   margin-bottom: 5px;
+  color: #39265d;
 }
 
 .table-header p {
   font-size: 13px;
-  color: #94a3b8;
+  color: #a49bb5;
 }
 
 .total-badge {
-  background: #dbeafe;
-  color: #1d4ed8;
+  background: #eee6ff;
+  color: #6745a5;
   padding: 8px 13px;
   border-radius: 20px;
   font-size: 12px;
   font-weight: 600;
 }
 
-/* Table */
+/* TABLE */
 .table-wrapper {
   width: 100%;
   overflow-x: auto;
@@ -189,61 +200,68 @@ table {
 }
 
 thead {
-  background: #f1f5f9;
+  background: #eae2f8;
 }
 
 th {
   text-align: left;
-  padding: 15px;
+  padding: 16px 15px;
   font-size: 12px;
-  color: #475569;
+  color: #533878;
   white-space: nowrap;
 }
 
 td {
   padding: 16px 15px;
   font-size: 12px;
-  border-bottom: 1px solid #f1f5f9;
+  border-bottom: 1px solid #f0ebf7;
   white-space: nowrap;
+  color: #685d7d;
+}
+
+tbody tr:nth-child(even) {
+  background: #faf8fe;
 }
 
 tbody tr:hover {
-  background: #f8fafc;
+  background: #f0eafd;
 }
 
 .nim {
-  color: #2563eb;
+  color: #7548b8;
   font-weight: 600;
 }
 
 .nama {
   font-weight: 600;
+  color: #403258;
 }
 
 .prodi-badge {
-  background: #eff6ff;
-  color: #2563eb;
+  background: #eee6ff;
+  color: #6745a5;
   padding: 6px 10px;
-  border-radius: 6px;
+  border-radius: 7px;
   font-size: 11px;
 }
 
+/* TABLE FOOTER */
 .table-footer {
   padding: 17px 24px;
-  color: #64748b;
+  color: #9488a8;
   font-size: 12px;
-  background: #fafafa;
+  background: #faf8fd;
 }
 
-/* Footer */
+/* FOOTER */
 footer {
   text-align: center;
   padding: 25px 0 5px;
-  color: #94a3b8;
+  color: #a49bb5;
   font-size: 12px;
 }
 
-/* Responsive */
+/* RESPONSIVE */
 @media (max-width: 768px) {
   .header {
     padding: 18px 5%;

@@ -15,7 +15,7 @@ function App() {
       tahunMasuk: "2024",
     },
     {
-      nim: "240512140070",
+      nim: "24051214070",
       nama: "Dimas Albi",
       noHp: "0831485732009",
       email: "dimasalbi@gmail.com",
